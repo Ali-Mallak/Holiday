@@ -16,7 +16,7 @@ body{
 .img{
     /* use transform */
 
-    /* transform: translateX(200px); */
+    transform: translateX(200px);
     /* transform: translateX(-200px); */
 
     /* transform: translateY(200px); */
