@@ -47,6 +47,14 @@ html,body{
     animation-delay: 2s;
     /* animation-iteration-count: 3; */
     animation-iteration-count: infinite;
+
+    animation-timing-function: ease;
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    animation-timing-function: cubic-bezier(.42,0,.58,1)
+    /* animation-timing-function: cubic-bezier(0,.77,1,.28) */
 }
 
 .luigi{
@@ -58,7 +66,7 @@ html,body{
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    /* animation-direction: reverse; */
+    animation-direction: reverse;
     /* animation-direction: alternate; */
     /* animation-direction: alternate-reverse */
 }
