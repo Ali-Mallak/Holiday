@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    text-align: center;
+    background-image: url("");
+}
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.img{
+    transform: translateX(200px);
+    /* transform: translateX(-200px); */
+    transform: translateY(200px);
+    /* transform: translateY(-200px); */
+    /* transform: translate(100px , 180px); */
+    /* transform: translate(-100px , 180px); */
+    /* transform: scaleX(0.5); */
+    /* transform: scaleX(3); */
+    /* transform: scaleY(2.5); */
+    /* transform: scaleY(4); */
+}   
