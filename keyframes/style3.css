@@ -41,19 +41,19 @@ html,body{
     animation-name: drive;
     animation-duration: 3s;
     
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
     /* animation-fill-mode: backwards; */
-    /* animation-fill-mode: both; */
-    animation-delay: 2s;
+    animation-fill-mode: both;
+    /* animation-delay: 2s; */
     /* animation-iteration-count: 3; */
     animation-iteration-count: infinite;
 
-    animation-timing-function: ease;
-    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease; */
+    animation-timing-function: linear;
     /* animation-timing-function: ease-in; */
     /* animation-timing-function: ease-out; */
     /* animation-timing-function: ease-in-out; */
-    animation-timing-function: cubic-bezier(.42,0,.58,1)
+    /* animation-timing-function: cubic-bezier(.42,0,.58,1) */
     /* animation-timing-function: cubic-bezier(0,.77,1,.28) */
 }
 
@@ -65,10 +65,29 @@ html,body{
     animation-duration: 5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-direction: reverse;
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
     /* animation-direction: alternate; */
     /* animation-direction: alternate-reverse */
+    animation-timing-function: linear;
+}
+
+.cloud{
+    position: absolute;
+}
+
+.cloud:nth-child(1){
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+
+.cloud:nth-child(2){
+    width: 300px;
+    top: 0;
+       /* if your like delay 👇add 5s */
+    animation: wind 50s linear infinite reverse;
 }
 
 @keyframes drive{
@@ -79,5 +98,14 @@ html,body{
     to{
         /* transform: translateX(90vw); */
         transform: translateX(1700px);
+    }
+}
+
+@keyframes wind{
+    from{
+        left: -300px;
+    }
+    to{
+        left: 100%;
     }
 }
