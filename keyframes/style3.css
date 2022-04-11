@@ -45,13 +45,17 @@ html,body{
     /* animation-fill-mode: backwards; */
     /* animation-fill-mode: both; */
     animation-delay: 2s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
 }
 
 @keyframes drive{
     from{
-        transform: translateX(200px);
+        /* transform: translateX(200px); */
+        transform: translateX(-200px);
     }
     to{
-        transform: translateX(90vw);
+        /* transform: translateX(90vw); */
+        transform: translateX(1700px);
     }
 }
