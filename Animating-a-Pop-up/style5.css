@@ -1,0 +1,72 @@
+header{
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+header:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.basket ul{
+  padding: 0;
+  margin-top: 40px;
+}
+.card{
+    background-color: lightslategray;
+    margin: 1rem;
+    padding: 1rem 0rem;
+}
+.card:hover{
+   transform: rotate(10deg);
+   transform: scale(1.08);
+    box-shadow: 3px 3px 25px red;
+    border: 3px orangered solid;
+    border-radius: 3%;
+}
+.card img{
+    border-radius: 20px;
+}
+.basket li{
+  display: inline-block;
+  list-style-type: none;
+  width: 30%;
+  text-align: center;
+}
+
+.basket button{
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.basket header div{
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+.basket header h1{
+  float: left;
+}
+
+/* style */
+.zoom{
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    width: 40px;
+    opacity: 0;
+    animation: zoom 3s ease forwards;
+}
+
+@keyframes zoom{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        right: 5px;
+    }
+}
